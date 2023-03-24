@@ -1,0 +1,254 @@
+
+.logo img {
+    width: 140px;
+    height: 140px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.signup_left,
+.signup_right {
+    width: 50%;
+}
+
+.signup_left {
+    display: flex;
+}
+
+.form {
+    margin-top: -60px;
+    margin-left: 160px;
+}
+
+.form h2 {
+    font-size: 30px;
+    color: #333333;
+}
+
+.form label {
+    font-size: 14px;
+    font-family: 'Manrope';
+    color: #333333;
+
+}
+.form__group {
+    display: grid;
+    /* gap: 6px; */
+    margin-bottom: 6px;
+    margin-top: 6px;
+
+
+}
+#showing,#showing1{
+    width: 20px;
+    position: absolute;
+    margin-left: 360px;
+    padding-top: 40px;
+    cursor: pointer;
+}
+.form input {
+    width: 400px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #B4B4B4;
+    border-radius: 8px;
+    outline: none;
+    margin-top: 6px;
+    font-size: 14px;
+    padding-left: 10px;
+    color: #111111;
+}
+::placeholder
+{
+    color:#B4B4B4;
+}
+.text_condition{
+    display: flex;
+    gap: 10px;
+}
+.check_box {
+    width: 16px !important;
+    height: 16px !important;
+    cursor: pointer;
+}
+
+.check_text {
+    color: #999999 !important;
+    font-family: 'Nunito Sans', sans-serif !important;
+    color: var(--primary-color);
+    padding-top: 5px;
+}
+
+.signup_btn {
+    width: 400px;
+    height: 44px;
+    font-weight: 400;
+    background: var(--primary-color);
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 14px !important;
+    color: #FFFFFF;
+    margin-top: 10px;
+    border: var(--primary-color);
+    cursor: pointer;
+}
+
+.signup_btn:hover {
+    background-color: #11399c;
+}
+
+.account_text {
+    padding-top: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+}
+.account_text a{
+    text-decoration: none;
+    color: #0036BF;
+}
+
+.bar-image {
+    margin-top: 16.5px;
+}
+
+.social_media {
+    width: 100%;
+    margin-top: 17px;
+    display: flex;
+    gap: 10px;
+}
+
+.social_media .google_link {
+    align-items: center;
+    display: flex;
+}
+
+.social_media .facebook_link,
+.social_media .google_link {
+    align-items: center;
+    display: flex;
+    height: 40px;
+    background: #EDEDED;
+    border-radius: 8px;
+
+}
+
+.social_media a {
+    text-decoration: none;
+    color: #3A3A3A;
+    font-size: 14px;
+}
+
+.social_media .google_link img {
+    width: 38px;
+    height: 30px;
+}
+
+.social_media .facebook_link img {
+    width: 37px;
+    height: 25px;
+}
+
+.google_link .text_para,
+.facebook_link .text_para {
+    padding-right: 10px;
+}
+
+/* ----------------------signup_right------------- */
+.signup_right {
+    background: rgba(0, 54, 191, 0.15);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-size: cover;
+    width: 50%;
+    margin-top: -150px;
+    position: relative;
+    height: 100.5vh;
+}
+
+.signup_right h2 {
+    padding-top: 66px;
+    align-items: center;
+    font-size: 20px;
+    color: #333333;
+    padding-left: 102px;
+    width: 83%;
+}
+
+.founder {
+    display: flex;
+    margin-top: 12px;
+    margin-left: 40px;
+}
+
+.founder_name p {
+    color: #000000;
+    font-size: 14px;
+    font-family: 'Nunito Sans';
+    margin-left: 70px;
+}
+.founder_name .text_name{
+    color: #999999;
+    font-size: 12px;
+    padding-top: 4px;
+}
+
+.rating {
+    margin-left: 330px;
+}
+.rating i{
+    font-size: 12px;
+}
+.employee_image img{
+    margin-top: 45px;
+    margin-left: 102px;
+    position: absolute;
+}
+
+/*============================================> Responsive <================================================= */
+
+@media screen and (max-width:820px){
+    body{
+        background: rgba(0, 54, 191, 0.15);
+    }
+    .signup_right{
+        display:none;
+    }
+    .signup_left{
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form{
+        margin-left:20px;
+    }
+    #showing,#showing1{
+        margin-left: 350px;
+    }
+}
+
+@media screen and (max-width:480px){
+    body{
+        background: rgba(0, 54, 191, 0.15);
+    }
+    .signup_left{
+        width:40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 130px;
+        padding-right: 30px;
+    }
+    .form h2{
+        text-align: center;
+        padding-top: 60px;
+    }
+    #showing1,#showing{
+        margin-left: 350px;
+    }
+}
